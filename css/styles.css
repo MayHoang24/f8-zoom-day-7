@@ -549,6 +549,9 @@ a {
 .shop .shop-form .shop-btn:hover {
     background: var(--second-color);
 }
+.shop .sidebar > .sidebar-heading {
+    margin-top: 60px;
+}
 
 .shop .sidebar-heading {
     font-size: 2.4rem;
@@ -652,8 +655,10 @@ a {
     position: absolute;
     width: 100%;
     border: 1px solid #ececec;
+    background: var(--second-text-color);
+    box-shadow: -3px 7px 59px 4px rgba(0, 0, 0, 0.63);
     top: 44px;
-    left: 0;
+    left: -1px;
     z-index: 4;
 }
 
@@ -683,4 +688,69 @@ a {
     line-height: 40px;
     color: #6f6f6f;
 }
-/* Css Shop content */
+/* Css Product */
+.shop .product-list {
+    --columns: 3;
+    --spacing: 30px;
+
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--spacing);
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.shop .product-list .product-item {
+    width: calc(100% / var(--columns) - var(--spacing));
+    margin-left: var(--spacing);
+    overflow: hidden;
+}
+
+.shop .product-list .product-img {
+    width: 100%;
+    height: 254px;
+    object-fit: cover;
+    aspect-ratio: 52 / 49;
+    transition: all ease 0.5s;
+}
+
+.shop .product-item:hover .product-img {
+    scale: 1.1;
+}
+
+.shop .product-list .product-info {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop .product-list .product-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #242222;
+}
+
+.shop .product-list .product-price {
+    margin: 12px 0 16px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.shop .product-list .product-btn {
+    margin-top: auto;
+    width: 130px;
+    line-height: 40px;
+    color: var(--second-text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 999px;
+    background: var(--primary-color);
+    border: none;
+    transition: all ease 0.3s;
+}
+
+.shop .product-list .product-btn:hover {
+    translate: 0 -6px;
+    box-shadow: -15px 172px 78px -69px rgba(0, 0, 0, 0.63);
+}
