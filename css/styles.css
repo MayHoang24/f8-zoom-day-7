@@ -704,6 +704,8 @@ a {
     width: calc(100% / var(--columns) - var(--spacing));
     margin-left: var(--spacing);
     overflow: hidden;
+    border: 1px solid #ececec;
+    border-top: none;
 }
 
 .shop .product-list .product-img {
@@ -753,4 +755,29 @@ a {
 .shop .product-list .product-btn:hover {
     translate: 0 -6px;
     box-shadow: -15px 172px 78px -69px rgba(0, 0, 0, 0.63);
+}
+
+.shop .shop-bottom {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.shop .shop-bottom .shop-bottom-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 99px;
+    background: var(--primary-color);
+    color: var(--second-text-color);
+    transition: all ease 0.3s;
+}
+
+.shop .shop-bottom .shop-bottom-link:hover {
+    background: var(--second-color);
 }
