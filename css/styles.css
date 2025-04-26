@@ -518,3 +518,169 @@ a {
     background: var(--primary-color);
     border: none;
 }
+
+/* ======Css Shop======= */
+.shop {
+    display: flex;
+    gap: 30px;
+}
+
+.shop .sidebar {
+    max-width: 300px;
+}
+
+.shop .shop-form {
+    border-radius: 0;
+    border: none;
+}
+
+.shop .shop-form .shop-input {
+    background: #eee;
+    font-style: italic;
+}
+
+.shop .shop-form .shop-btn {
+    padding: 0 30px;
+    background: var(--primary-color);
+    color: var(--second-text-color);
+    transition: all ease 0.3s;
+}
+
+.shop .shop-form .shop-btn:hover {
+    background: var(--second-color);
+}
+
+.shop .sidebar-heading {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.shop .sidebar-Product {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.shop .sidebar-Product + .sidebar-Product {
+    margin-top: 30px;
+}
+
+.shop .sidebar-Product:hover .sidebar-Product-title {
+    color: var(--primary-color);
+}
+
+.shop .sidebar-Product .sidebar-Product-img {
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
+}
+
+.shop .sidebar-Product .sidebar-Product-title {
+    font-size: 1.8rem;
+    color: #242222;
+    margin: 12px 0;
+    transition: all ease 0.3s;
+}
+
+.shop .sidebar-Product .sidebar-Product-price {
+    display: block;
+    font-weight: bold;
+}
+
+.shop .shop-body {
+    width: 100%;
+    flex-grow: 1;
+}
+
+.shop .shop-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop .shop-top-btn {
+    position: relative;
+    padding: 0 15px;
+    width: 200px;
+    height: 45px;
+    border: 1px solid #ececec;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.shop .shop-top-btn:hover {
+    background: var(--primary-color);
+}
+
+.shop .shop-top-btn:hover .btn-text,
+.btn-caret {
+    color: var(--second-text-color);
+}
+
+.shop .shop-top-btn:hover .btn-caret {
+    color: var(--second-text-color);
+}
+
+.shop .shop-top-btn:hover .menu-dropdown-list {
+    display: block;
+}
+
+.shop .shop-top-btn .btn-text {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 45px;
+    color: #6f6f6f;
+}
+
+.shop .shop-top-btn .btn-caret {
+    color: #6f6f6f;
+    font-size: 1.5rem;
+}
+
+.shop .shop-top-desc {
+    font-size: 1.8rem;
+    line-height: 45px;
+    color: #6f6f6f;
+}
+
+.shop .menu-dropdown-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ececec;
+    top: 44px;
+    left: 0;
+    z-index: 4;
+}
+
+.shop .menu-dropdown-list::before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    width: 100%;
+    height: 40px;
+    top: -12px;
+    left: 0;
+}
+
+.shop .menu-dropdown-list li + li {
+    border-top: 1px solid #ececec;
+}
+.shop .menu-dropdown-list li:hover {
+    background: var(--primary-color);
+}
+
+.shop .menu-dropdown-list li:hover .menu-dropdown-item {
+    color: var(--second-text-color);
+}
+
+.shop .menu-dropdown-item {
+    font-size: 1.6rem;
+    line-height: 40px;
+    color: #6f6f6f;
+}
+/* Css Shop content */
