@@ -65,6 +65,25 @@ a {
     max-width: 1170px;
 }
 
+/* =======Css Index======= */
+.index {
+    padding: 100px 0;
+    background: #ebebeb;
+}
+
+.index__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.index__link {
+    padding: 8px 20px;
+    background: #783df0;
+    font-size: 2.3rem;
+    color: #ebebeb;
+}
+
 /* ======Css Header======= */
 .header {
     display: flex;
@@ -81,7 +100,7 @@ a {
 }
 
 .header .wrapper {
-    height: 500px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
 }
@@ -780,4 +799,97 @@ a {
 
 .shop .shop-bottom .shop-bottom-link:hover {
     background: var(--second-color);
+}
+
+/* =========Css Home page========= */
+.header-home {
+    height: 914px;
+}
+
+.header-home .header-home-content {
+    height: 838px;
+    margin: 0;
+    align-items: flex-start;
+}
+
+.header-home .header-subheading {
+    font-family: var(--heading-font);
+    color: var(--second-text-color);
+}
+
+.header-home .header-home-heading {
+    max-width: 760px;
+    font-size: 5.8rem;
+    line-height: 66px;
+    margin: 35px 0 45px 0;
+}
+
+.header-home .wrap-btn {
+    display: flex;
+    gap: 30px;
+}
+
+.header-home .header-btn {
+    min-width: 182px;
+    line-height: 44px;
+    font-family: var(--heading-font);
+    background: var(--primary-color);
+    color: var(--second-text-color);
+    border: none;
+    border-radius: 30px;
+    transition: all ease 0.5s;
+}
+
+.header-home .header-btn:hover {
+    color: var(--primary-color);
+    background: var(--second-text-color);
+}
+
+/* Css Home Main */
+.home-main .feature {
+    padding: 100px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-main .feature-heading {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000b3;
+    margin-left: 80px;
+}
+
+.home-main .feature-heading:first-child::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/img-sidebar-shop-1.jpg);
+    border-radius: 8px;
+    top: -40px;
+    left: -80px;
+}
+
+.home-main .feature-heading + .feature-heading::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/img-sidebar-shop-4.jpg);
+    border-radius: 8px;
+    top: -40px;
+    left: -80px;
+}
+
+.home-main .feature-heading:last-child::before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 70px;
+    background-image: url(../img/img-sidebar-shop-3.jpg);
+    border-radius: 8px;
+    top: -40px;
+    left: -80px;
 }
